@@ -1,11 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto multimedia</title>
+    <title>Proyecto Multimedia</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* Sección principal */
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .video-container {
+            margin: 20px 0;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            max-width: 800px;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+        }
+
+        /* Sección informativa */
+        .info-section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-section h2 {
+            color: #333;
+        }
+
+        /* Reproductor de audio */
+        .audio-player {
+            margin: 20px 0;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* Diseño responsive */
+        @media (max-width: 768px) {
+            iframe, video {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Proyecto Multimedia</h1>
+
+<header>
+<h1>Mensaje del video: Impacto social</h1>
+</header>
+
+<div class="main-content">
+<!-- Espacio para el video -->
+<div class="video-container">
+    <h2>Ver el video</h2>
+    <p>Fíjate en este video y el mensaje el cúal queremos transmitir.</p>
+    <!-- Video incrustado con iframe (YouTube) -->
+    <iframe src="https://www.youtube.com/embed/1tJ_aaYTxiU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+</div>
+
+
+<!-- Sección informativa -->
+<div class="info-section">
+    <h2>Sobre el Video y su Impacto</h2>
+    <p>Este video lo que busca es concienciar sobre un tema importante y generar un cambio social positivo. Esperamos que cada persona que haya visto el video, al final acabe haciendo una pequeña reflexión sobre el mensaje y se sienta motivado a participar en el, súmandose en esta lucha para dejar la adicción a las drogas y concienciar a la gente que no se enganche a ella. Con este video tiene el fin de mejorar la sociedad.</p>
+</div>
+
+<!-- Reproductor de audio -->
+<div class="audio-player">
+    <h2>Música de Fondo</h2>
+    <audio controls>
+        <source src="Imagenes/Videos/Heart of Nowhere - Kevin Macleod  Royalty-Free Calm Music - 십초편집 10 Seconds Edit.mp3" type="audio/mp3">
+    </audio>
+    <p><strong>Origen:</strong>  <br>
+       <strong>Licencia:</strong> </p>
+</div>
+</div>
+
 </body>
 </html>
