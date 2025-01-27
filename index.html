@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Multimedia</title>
     <style>
-        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -24,7 +23,6 @@
             margin: 0;
         }
 
-        
         .main-content {
             padding: 20px;
             text-align: center;
@@ -34,19 +32,12 @@
             margin: 20px 0;
         }
 
-        iframe {
+        iframe, video {
             width: 100%;
             height: 400px;
             max-width: 800px;
         }
 
-        video {
-            width: 100%;
-            height: auto;
-            max-width: 800px;
-        }
-
-        
         .info-section {
             background-color: #fff;
             padding: 20px;
@@ -59,7 +50,6 @@
             color: #333;
         }
 
-        
         .audio-player {
             margin: 20px 0;
         }
@@ -69,7 +59,6 @@
             max-width: 500px;
         }
 
-        
         @media (max-width: 768px) {
             iframe, video {
                 width: 100%;
@@ -84,30 +73,37 @@
 </header>
 
 <div class="main-content">
-<!-- Espacio para el video -->
-<div class="video-container">
-    <h2>Ver el video</h2>
-    <p>Fíjate en este video y el mensaje el cúal queremos transmitir.</p>
-    <!-- Video incrustado con iframe (YouTube) -->
-    <iframe src="https://youtu.be/BLcfbKICr7k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-</div>
+    <!-- Espacio para el video -->
+    <div class="video-container">
+        <h2>Ver el video de YouTube</h2>
+        <p>Fíjate en este video y el mensaje el cual queremos transmitir.</p>
+        <!-- Video incrustado con iframe (YouTube) -->
+        <iframe src="https://www.youtube.com/embed/BLcfbKICr7k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+    </div>
 
+    <!-- Video local con la etiqueta <video> -->
+    <div class="video-container">
+        <h2>Ver el Video Local</h2>
+        <p>Este es un video cargado directamente desde mi página.</p>
+        <video controls>
+            <source src="Imagenes/Videos/clideo_editor_07931d3defbc4f11b0e2586c72c88f12.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+    </div>
 
+    <div class="info-section">
+        <h2>Sobre el Video y su Impacto</h2>
+        <p>Este video lo que busca es concienciar sobre un tema importante y generar un cambio social positivo. Esperamos que cada persona que haya visto el video, al final acabe haciendo una pequeña reflexión sobre el mensaje y se sienta motivado a participar en el, súmandose en esta lucha para dejar la adicción a las drogas y concienciar a la gente que no se enganche a ella. Con este video tiene el fin de mejorar la sociedad.</p>
+    </div>
 
-<div class="info-section">
-    <h2>Sobre el Video y su Impacto</h2>
-    <p>Este video lo que busca es concienciar sobre un tema importante y generar un cambio social positivo. Esperamos que cada persona que haya visto el video, al final acabe haciendo una pequeña reflexión sobre el mensaje y se sienta motivado a participar en el, súmandose en esta lucha para dejar la adicción a las drogas y concienciar a la gente que no se enganche a ella. Con este video tiene el fin de mejorar la sociedad.</p>
-</div>
-
-
-<div class="audio-player">
-    <h2>Música de Fondo</h2>
-    <audio controls>
-        <source src="Imagenes/Videos/sound-ambience-sonido-ambiente-68-15693.mp3" type="audio/mp3">
-    </audio>
-    <p><strong>Origen:</strong> Pixabay<br>
-       <strong>Licencia:</strong> Sound Ambience - Sonido Ambiente 68</p>
-</div>
+    <div class="audio-player">
+        <h2>Música de Fondo</h2>
+        <audio controls>
+            <source src="Imagenes/Videos/sound-ambience-sonido-ambiente-68-15693.mp3" type="audio/mp3">
+        </audio>
+        <p><strong>Origen:</strong> Pixabay<br>
+           <strong>Licencia:</strong> Sound Ambience - Sonido Ambiente 68</p>
+    </div>
 </div>
 
 </body>
